@@ -5,6 +5,7 @@
   position: relative;
   margin-top: -7rem;
 }
+
 .f-content {
   position: absolute;
   display: flex;
@@ -13,22 +14,8 @@
   flex-direction: column;
   width: 100%;
   margin-top: 4rem;
-  gap: 4rem;
+  gap: 2rem; /* Reduced gap for better spacing */
   color: white;
-}
-.f-icons {
-  display: flex;
-  gap: 2rem;
-}
-.footer {
-  position: relative;
-}
-
-.f-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   padding: 20px;
 }
 
@@ -48,8 +35,30 @@
   margin-top: 10px;
 }
 
+.f-icons {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Mobile adjustments */
 @media screen and (max-width: 480px) {
   .f-content {
-    transform: scale(0.5);
+    margin-top: 2rem; /* Reduce margin for smaller screens */
+    gap: 1rem; /* Reduce gap further */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .f-address {
+    position: relative; /* Change to relative to avoid overlap issues */
+    left: 0; /* Reset absolute positioning */
+    bottom: 0;
+    font-size: 12px; /* Slightly smaller font for mobile */
+    width: 90%; /* Allow more flexibility */
+    max-width: none; /* Remove max-width constraint */
+    text-align: center; /* Center-align for better readability */
+  }
+
+  .f-content span {
+    font-size: 14px; /* Ensure readability */
   }
 }
