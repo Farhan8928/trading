@@ -20,9 +20,36 @@
   display: flex;
   gap: 2rem;
 }
+.footer {
+  position: relative;
+}
 
-@media screen and (max-width: 480px){
-  .f-content{
-    transform: scale(.5);
+.f-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.f-address {
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+  font-size: 14px;
+  color: white;
+  text-align: left;
+  width: 80%;
+  max-width: 400px;
+}
+
+.f-content span {
+  color: white;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .f-content {
+    transform: scale(0.5);
   }
 }

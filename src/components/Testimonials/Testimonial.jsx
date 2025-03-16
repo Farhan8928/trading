@@ -1,49 +1,78 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./Testimonial.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
-import profilePic1 from "../../img/profile1.jpg";
-import profilePic2 from "../../img/profile2.jpg";
-import profilePic3 from "../../img/profile3.jpg";
-import profilePic4 from "../../img/profile4.jpg";
-import { themeContext } from "../../Context";
+import profilePic1 from "../../img/avatarLadies.png";
+import profilePic2 from "../../img/avatarMen.png";
+import { Helmet } from "react-helmet";
 
 const Testimonial = () => {
-  const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
-
   const clients = [
     {
       img: profilePic1,
       review:
-        "Andrew's trading advice completely transformed my strategy. His insights on market trends helped me make better decisions and maximize my profits.",
+        "Experts Research has provided me with unmatched market insights. The advice I received gave me the confidence to invest and see remarkable returns.",
     },
     {
       img: profilePic2,
       review:
-        "I was struggling with consistency until I started following Andrew’s trading tips. His risk management strategies are top-notch and truly effective.",
+        "Thanks to Experts Research, I’m now consistently making profitable trades. Their data-driven analysis and personalized strategies have been game changers for me.",
     },
     {
-      img: profilePic3,
+      img: profilePic1,
       review:
-        "Andrew provides some of the best trading insights out there. His technical analysis skills helped me understand the market in ways I never imagined.",
+        "The team at Experts Research is highly knowledgeable and always up-to-date with market trends. Their tips and guidance helped me diversify my portfolio with confidence.",
     },
     {
-      img: profilePic4,
+      img: profilePic2,
       review:
-        "Thanks to Andrew's guidance, I’ve improved my trading discipline and profitability. His advice is practical, easy to follow, and highly effective!",
+        "I’ve been following Experts Research for months, and I can confidently say that their trading advice is second to none. I’ve seen a noticeable improvement in my returns since I started.",
     },
   ];
 
   return (
     <div className="t-wrapper" id="testimonial">
+      <Helmet>
+        <title>Testimonials - Experts Research</title>
+        <meta
+          name="description"
+          content="Read testimonials from traders who succeeded with Experts Research’s stock market advisory services, featuring market insights and profitable strategies."
+        />
+        <meta
+          name="keywords"
+          content="Experts Research testimonials, stock market reviews, client success, trading advice, SEBI registered"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Testimonials - Experts Research" />
+        <meta
+          property="og:description"
+          content="See what traders say about our expert stock market guidance and insights."
+        />
+        <meta
+          property="og:type"
+          content="website"
+        />
+        <meta
+          property="og:url"
+          content="https://expertsresearch.com/#testimonial"
+        />
+        <meta
+          property="og:image"
+          content="https://expertsresearch.com/images/testimonial-image.jpg"
+        />
+        <link rel="canonical" href="https://expertsresearch.com/#testimonial" />
+      </Helmet>
+
       <div className="t-heading">
         <span>What Traders Say </span>
         <span>About My Advice </span>
         <span>and Market Insights...</span>
-        <div className="blur t-blur1" style={{ background: "var(--purple)" }}></div>
+        <div
+          className="blur t-blur1"
+          style={{ background: "var(--purple)" }}
+        ></div>
         <div className="blur t-blur2" style={{ background: "skyblue" }}></div>
       </div>
 

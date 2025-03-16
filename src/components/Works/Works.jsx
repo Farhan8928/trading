@@ -1,13 +1,14 @@
 import React, { useContext } from "react";
 import "./Works.css";
-import Upwork from "../../img/Upwork.png";
-import Fiverr from "../../img/fiverr.png";
-import Amazon from "../../img/amazon.png";
-import Shopify from "../../img/Shopify.png";
-import Facebook from "../../img/Facebook.png";
+import bankNifty from "../../img/bankNiftys.png";
+import sensex from "../../img/sensexs.png";
+import BSE from "../../img/bse.png";
+import nifty50 from "../../img/nifty50s.png";
+import finnifty from "../../img/finnifty.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import { Helmet } from "react-helmet";
 
 const Works = () => {
   const theme = useContext(themeContext);
@@ -15,18 +16,43 @@ const Works = () => {
 
   return (
     <div className="works" id="works">
+      <Helmet>
+        <title>Why Choose Us - Experts Research</title>
+        <meta
+          name="description"
+          content="Discover why Experts Research is your trusted partner for stock market success with expert trading strategies and insights for Nifty, Bank Nifty, BSE, and more."
+        />
+        <meta
+          name="keywords"
+          content="why choose Experts Research, stock market advisory, trading strategies, Nifty 50, Bank Nifty, BSE, SEBI registered"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Why Choose Us - Experts Research" />
+        <meta
+          property="og:description"
+          content="Top-tier market analysis and proven trading strategies to maximize your profits with Experts Research."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://expertsresearch.com/#works" />
+        <meta
+          property="og:image"
+          content="https://expertsresearch.com/images/works-image.jpg"
+        />
+        <link rel="canonical" href="https://expertsresearch.com/#works" />
+      </Helmet>
+
       {/* Left Side */}
       <div className="w-left">
         <div className="awesome">
           <span style={{ color: darkMode ? "white" : "" }}>Why Choose Us?</span>
           <span>Expert Trading Strategies & Insights</span>
-          <spane>
-            We provide top-tier market analysis, proven trading strategies, and 
+          <span>
+            We provide top-tier market analysis, proven trading strategies, and
             <br />
-            expert guidance to help traders maximize their profits. 
+            expert guidance to help traders maximize their profits.
             <br />
             Our experience with financial markets ensures your trading success.
-          </spane>
+          </span>
           <Link to="contact" smooth={true} spy={true}>
             <button className="button s-button">Start Trading</button>
           </Link>
@@ -47,19 +73,35 @@ const Works = () => {
           className="w-mainCircle"
         >
           <div className="w-secCircle">
-            <img src={Upwork} alt="Upwork" />
+            <img
+              src={bankNifty}
+              alt="Bank Nifty"
+              style={{ width: "120px", height: "120px" }}
+            />
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="Fiverr" />
+            <img
+              src={nifty50}
+              alt="Nifty 50"
+              style={{ width: "120px", height: "120px" }}
+            />
           </div>
           <div className="w-secCircle">
-            <img src={Amazon} alt="Amazon" />
+            <img
+              src={BSE}
+              alt="BSE"
+              style={{ width: "120px", height: "120px" }}
+            />
           </div>
           <div className="w-secCircle">
-            <img src={Shopify} alt="Shopify" />
+            <img
+              src={finnifty}
+              alt="FinNifty"
+              style={{ width: "120px", height: "120px" }}
+            />
           </div>
           <div className="w-secCircle">
-            <img src={Facebook} alt="Facebook" />
+            <img src={sensex} alt="Sensex" />
           </div>
         </motion.div>
 
