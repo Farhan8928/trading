@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="f-address">
           <span>Office Address: </span>
           <span>
-            4th Floor, Banarsi Heritage Office, 305-306,
+            3th Floor, Banarsi Heritage Office, 305-306,
             Mindspace, Malad West, Mumbai, Maharashtra 400064
           </span>
         </div>
