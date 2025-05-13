@@ -59,8 +59,8 @@ const Services = () => {
             detail={
               "Daily Intraday Tips | Entry & Exit Signals | Market Updates"
             }
-            discountPrice={18500}
-            actualPrice={25000}
+            discountPrice={48500}
+            actualPrice={55000}
           />
         </motion.div>
         <motion.div
@@ -74,8 +74,8 @@ const Services = () => {
             detail={
               "Nifty & Bank Nifty Options Trading | Swing Trades | Risk Management"
             }
-            discountPrice={48500}
-            actualPrice={55000}
+            discountPrice={75500}
+            actualPrice={85000}
           />
         </motion.div>
         <motion.div
@@ -90,8 +90,8 @@ const Services = () => {
               "Portfolio Management | Exclusive Market Insights | One-on-One Coaching"
             }
             color="rgba(252, 166, 31, 0.45)"
-            discountPrice={78500}
-            actualPrice={90000}
+            discountPrice={111000}
+            actualPrice={130000}
           />
         </motion.div>
         <div
